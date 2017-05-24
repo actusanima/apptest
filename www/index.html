@@ -45,9 +45,6 @@
     <script type="text/javascript">
         app.initialize();
         
-        $('body').on("click", ".camera-button", function(){
-
-        })
         
         $('body').on("click", ".camera-buttonXXX", function(){
             navigator.notification.alert(
@@ -59,7 +56,7 @@
         })
         
         
-        $('body').on("click", ".camera-buttonXXX", function(){
+        $('body').on("click", ".camera-button", function(){
             $('.geo').text('CAMERA');
             navigator.camera.getPicture(camOnSuccess, camOnFail, { quality: 50,
                 destinationType: Camera.DestinationType.DATA_URL
